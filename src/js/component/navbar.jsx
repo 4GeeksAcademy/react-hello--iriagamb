@@ -1,18 +1,65 @@
-import react from "react";
+import React from "react";
 
-const Navbar = () => {
+const NavBar = () => {
     return (
-        <div class="collapse navbar-collapse" id="navbarsExample02">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-        </ul>
+      <div>
+        <nav className="navbar navbar-expand-lg bg-body-secondary bg-dark">
+          <div className="container-fluid d-flex justify-content-between">
+  
+            <div>
+              <a className="navbar-brand text-white mx-4" href="#">
+                Start Bootsrap
+              </a>
+            </div>
+  
+            <div>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars text-white"></i>
+            </button>
+  
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <a
+                    className="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link text-white" href="#">
+                    About
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link text-white" href="#">
+                    Services
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link disabled text-white"
+                    aria-disabled="true"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </div>
+        </nav>
       </div>
     );
-};
-
-export default Navbar;
+  };
+  export default NavBar;

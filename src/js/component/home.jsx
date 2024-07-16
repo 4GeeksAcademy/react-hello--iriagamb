@@ -1,11 +1,13 @@
 import React from "react";
 import Header from "./header";
 import Card from "./card";
-
 import Footers from "./footers";
+import NavBar from "./navbar";
+
+
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+
 
 //create your first component
 const Home = () => {
@@ -22,7 +24,7 @@ const Home = () => {
 				
 				</div>
 			</div>
-			<BottomNavbar />
+			<Footers />
 		</div>
 	);
 };
